@@ -1,0 +1,2409 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Property Values Desktop</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Property Values Desktop" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Property Values Desktop&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+:root:not([data-app-block-surface], [data-visualize-standalone]) &gt; body {
+  padding: 12px;
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* The shared runtime owns data-tooltip; suppress AppBlock&#x27;s pseudo-tooltip. */
+main [data-tooltip]::after {
+  content: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+/* Keep authored mockup button styles out of the shared carousel chrome. */
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex !important;
+  height: auto !important;
+  min-height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  padding: 0 6px !important;
+  -webkit-app-region: no-drag;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: inherit !important;
+  background: transparent !important;
+  font: inherit !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px !important;
+  padding: 0 !important;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px !important;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
+  width: 100% !important;
+  min-height: 28px;
+  justify-content: flex-start !important;
+  padding: 4px 8px !important;
+  font-size: var(--font-size-small) !important;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover) !important;
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px !important;
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;door-designs&quot;&gt;
+&lt;style&gt;
+#door-designs .app{--nav:#1f263e;--yellow:#ffcd00;--ink:#334155;--line:#cbd5e1;--bg:#f1f5f9;font-family:Lato,Arial,sans-serif;font-size:14px;line-height:1.45;color:var(--ink);background:var(--bg);min-height:1060px;display:grid;grid-template-columns:166px minmax(0,1fr);color-scheme:light}
+#door-designs *{box-sizing:border-box}#door-designs button,#door-designs input{font:inherit}#door-designs button{cursor:pointer}#door-designs button:disabled{cursor:default;opacity:.45}#door-designs .side{background:var(--nav);color:white;padding:22px 10px}#door-designs .logo{font-size:27px;font-weight:800;color:#ffcd00;margin:0 10px 27px}#door-designs .navitem{padding:11px 8px;font-size:12px;display:flex;gap:8px;align-items:center}#door-designs .navitem svg{width:15px;height:15px;color:#94a3b8}#door-designs .navgroup{background:#475569;border-radius:4px;margin-top:9px}#door-designs .sub{padding-left:15px}#door-designs .current{background:#334155;border-radius:4px}#door-designs .right{min-width:0}#door-designs .topbar{height:60px;background:white;display:flex;align-items:center;justify-content:flex-end;padding:0 22px;gap:12px;border-bottom:1px solid #e2e8f0}#door-designs .country{padding:6px 12px;border:1px solid var(--line);border-radius:5px;font-size:12px}#door-designs .topbar svg{width:17px;height:17px}#door-designs main{padding:24px}#door-designs h1{font-size:24px;line-height:1.25;margin:0 0 20px;font-weight:700}#door-designs h2{font-size:16px;margin:0;font-weight:700}#door-designs h3{font-size:14px;margin:0 0 12px;font-weight:700}#door-designs .panel{background:white;border-radius:12px;padding:20px;margin-bottom:18px}#door-designs .modelgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;max-width:580px}#door-designs .fieldlabel{display:block;font-size:12px;margin-bottom:6px}#door-designs .required{color:#ef4444}#door-designs .field{border:1px solid var(--line);border-radius:5px;background:white;min-height:36px;padding:7px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--ink);width:100%;text-align:left}#door-designs .field svg{width:14px;height:14px;color:#94a3b8;flex-shrink:0}#door-designs .actions{display:flex;gap:10px;align-items:center;margin-top:16px;flex-wrap:wrap}#door-designs .action{border:1px solid var(--line);border-radius:5px;background:white;color:var(--ink);padding:8px 12px;font-size:12px}#door-designs .yellow{background:var(--yellow);border-color:var(--yellow);color:var(--nav)}#door-designs .plain{background:none;border-color:transparent}#door-designs .muted{color:#64748b;font-size:12px}#door-designs .split{display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:18px;align-items:start}#door-designs .heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}#door-designs .count{font-size:12px;padding:2px 7px;background:#f1f5f9;border-radius:4px;color:#475569}#door-designs .property-menu{border:1px solid var(--line);border-radius:6px;margin-top:6px;box-shadow:0 5px 16px #1f263e14;overflow:hidden;background:white}#door-designs .searchbox{padding:10px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:7px}#door-designs .searchbox svg{width:16px;height:16px;color:#94a3b8}#door-designs .searchbox input{width:100%;min-width:0;border:0;background:white;color:#334155;padding:4px;outline-offset:3px}#door-designs .sectionlabel{font-size:11px;color:#64748b;padding:10px 12px 5px}#door-designs .option{display:flex;align-items:center;gap:9px;padding:8px 12px;font-size:13px;min-height:36px}#door-designs .option input{accent-color:#1f263e;width:15px;height:15px;flex-shrink:0}#door-designs .option.selected{background:#f1f5f9}#door-designs .option span{flex:1}#door-designs .menubottom{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:10px;border-top:1px solid #e2e8f0}#door-designs .valuefields{margin-top:20px;display:grid;gap:15px}#door-designs .value-menu{border:1px solid var(--line);border-radius:5px;margin-top:4px;background:white}#door-designs .value-menu .option{padding:6px 10px}#door-designs .summary{display:grid;gap:13px}#door-designs .summaryitem{border-bottom:1px solid #e2e8f0;padding-bottom:12px;display:flex;justify-content:space-between;gap:8px}#door-designs .summaryitem:last-child{border:0;padding-bottom:0}#door-designs .summaryitem small{display:block;font-size:11px;color:#64748b;margin-bottom:3px}#door-designs .summaryitem strong{font-size:13px;font-weight:500}#door-designs .remove{border:0;background:none;align-self:start;color:#64748b;font-size:18px;padding:0 3px}#door-designs .empty-value{color:#64748b;font-style:italic}#door-designs .upload{border:1px dashed #cbd5e1;border-radius:6px;padding:17px 10px;text-align:center;margin-bottom:12px}#door-designs .upload p{margin:8px 0;font-size:12px}#door-designs .upload svg{width:23px;height:23px;color:#94a3b8}#door-designs .upload input{max-width:100%;font-size:11px}#door-designs .widebutton{width:100%}#door-designs .uploadblock+.uploadblock{border-top:1px solid #e2e8f0;padding-top:18px;margin-top:20px}#door-designs .summarystrip{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}#door-designs .summarystrip .summaryitem{border:1px solid #e2e8f0;border-radius:6px;padding:9px 11px;flex:1;min-width:150px;background:#f8fafc}#door-designs .editor{display:grid;grid-template-columns:230px minmax(0,1fr);border:1px solid var(--line);border-radius:7px;overflow:hidden;margin-top:15px}#door-designs .propertycol{border-right:1px solid var(--line)}#door-designs .propertycol .option{padding:10px;font-size:12px}#door-designs .editvalues{padding:18px}#door-designs .editvalues .valuefields{margin-top:0}#door-designs .editorfooter{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}#door-designs .uploadsrow{display:grid;grid-template-columns:1fr 1fr;gap:20px}#door-designs .uploadsrow .uploadblock+.uploadblock{margin:0;padding:0;border:0}#door-designs .notice{margin-top:9px;font-size:12px;color:#64748b}#door-designs .flash{padding-top:10px;font-size:12px;color:#334155}#door-designs [hidden]{display:none!important}
+@media(max-width:850px){#door-designs .app{grid-template-columns:135px minmax(0,1fr)}#door-designs main{padding:16px}#door-designs .split{grid-template-columns:1fr}#door-designs .editor{grid-template-columns:195px minmax(0,1fr)}#door-designs .panel{padding:16px}#door-designs .app{min-height:1590px}}
+@media(max-width:560px){#door-designs .app{grid-template-columns:1fr;min-height:1900px}#door-designs .side{display:none}#door-designs .modelgrid,#door-designs .editor,#door-designs .uploadsrow{grid-template-columns:1fr}#door-designs .propertycol{border-right:0;border-bottom:1px solid var(--line)}#door-designs main{padding:12px}#door-designs h1{font-size:22px}#door-designs .summarystrip{display:grid}#door-designs .topbar{height:48px}}
+&lt;/style&gt;
+&lt;style&gt;
+#door-designs .desktop-viewport{width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+#door-designs .app{width:1920px;min-width:1920px;min-height:1080px;grid-template-columns:220px minmax(0,1fr);font-size:15px}
+#door-designs main{padding:30px 36px}#door-designs h1{font-size:28px;margin-bottom:26px}#door-designs .side{padding:24px 14px}#door-designs .navitem{font-size:14px;padding:13px 10px}#door-designs .topbar{height:72px}#door-designs .panel{padding:26px;margin-bottom:22px}#door-designs .desktop-columns{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:26px;align-items:start}#door-designs .modelgrid{max-width:none;grid-template-columns:1fr 1fr;gap:18px 28px}#door-designs .fieldlabel{font-size:14px}#door-designs .field{min-height:42px;font-size:15px;padding:9px 12px}#door-designs .action{font-size:14px;padding:10px 16px}#door-designs h2{font-size:19px}#door-designs h3{font-size:17px}#door-designs .property-header{display:grid;grid-template-columns:310px minmax(0,1fr);gap:20px;padding:12px 0;color:#64748b;font-size:13px;border-bottom:1px solid #e2e8f0}#door-designs .property-row{display:grid;grid-template-columns:310px minmax(0,1fr);gap:20px;align-items:center;padding:12px 0;border-bottom:1px solid #e2e8f0}#door-designs .property-row:last-child{border-bottom:0}#door-designs .property-name{font-size:15px}#door-designs .value-cell{position:relative;min-width:0}#door-designs .value-cell.open{z-index:20}#door-designs .value-cell .field[aria-expanded=true]{border-color:#64748b;box-shadow:0 0 0 2px #cbd5e133}#door-designs .placeholder{color:#94a3b8}#door-designs .value-popover{position:absolute;top:calc(100% + 5px);left:0;right:0;z-index:30;border:1px solid #cbd5e1;border-radius:6px;background:white;box-shadow:0 8px 24px #1f263e1a;overflow:hidden}#door-designs .value-popover .searchbox{padding:12px}#door-designs .value-popover .option{font-size:15px;padding:12px 14px;gap:12px}#door-designs .value-popover .sectionlabel{font-size:12px;padding:10px 14px 5px}#door-designs .value-popover .menubottom{padding:12px}#door-designs .value-popover input[type=checkbox]{width:17px;height:17px}#door-designs .summary-entry{padding:13px 0;border-bottom:1px solid #e2e8f0}#door-designs .summary-entry:last-child{border-bottom:0}#door-designs .summary-entry .fieldlabel{color:#64748b;font-size:13px}#door-designs .summary-choice{display:flex;gap:8px;align-items:center}#door-designs .summary-choice .value-cell{flex:1}#door-designs .summary-choice .remove{align-self:center;padding:6px}#door-designs .upload{padding:25px 12px;margin:16px 0}#door-designs .upload p{font-size:14px;margin:12px 0}#door-designs .upload svg{width:32px;height:32px}#door-designs .upload input{font-size:12px}#door-designs .uploadblock+.uploadblock{margin-top:26px;padding-top:25px}#door-designs .muted{font-size:13px}#door-designs .count{font-size:13px}#door-designs .flash{font-size:14px}#door-designs .selected-divider{font-size:12px;color:#64748b;padding-top:18px}#door-designs .summary-empty{font-size:14px;color:#64748b}#door-designs .side-panel{min-width:0}#door-designs .preview-image{display:block;max-width:100%;max-height:180px;margin:0 auto 12px;object-fit:contain}
+&lt;/style&gt;
+&lt;div class=&quot;desktop-viewport&quot; aria-label=&quot;Макет страницы шириной 1920 пикселей&quot;&gt;&lt;div class=&quot;app&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script&gt;
+(function(){
+const root=document.getElementById(&#x27;door-designs&#x27;),app=root.querySelector(&#x27;.app&#x27;);
+const icon=n=&gt;&#x27;&lt;i data-lucide=&quot;&#x27;+n+&#x27;&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&#x27;,chevron=icon(&#x27;chevron-down&#x27;);
+const esc=s=&gt;String(s).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;}[c]));
+const props=[
+{id:&#x27;outer&#x27;,name:&#x27;Цвет внешний&#x27;,values:[&#x27;Медный антик&#x27;]},
+{id:&#x27;inner&#x27;,name:&#x27;Цвет внутренний&#x27;,values:[&#x27;/Медный антик&#x27;]},
+{id:&#x27;molding&#x27;,name:&#x27;Молдинг&#x27;,values:[&#x27;нет&#x27;]},
+{id:&#x27;leaves&#x27;,name:&#x27;Створчатость&#x27;,values:[&#x27;одностворчатая&#x27;]},
+{id:&#x27;width&#x27;,name:&#x27;Ширина&#x27;,values:[&#x27;860&#x27;,&#x27;960&#x27;]},
+{id:&#x27;height&#x27;,name:&#x27;Высота&#x27;,values:[&#x27;2050&#x27;]},
+{id:&#x27;panelout&#x27;,name:&#x27;Дизайн наружной панели&#x27;,values:[&#x27;ФЛ&#x27;]},
+{id:&#x27;panelin&#x27;,name:&#x27;Дизайн внутренней панели&#x27;,values:[&#x27;ФЛ&#x27;]},
+{id:&#x27;insertout&#x27;,name:&#x27;Цвет вставки снаружи&#x27;,values:[&#x27;нет&#x27;]},
+{id:&#x27;insertin&#x27;,name:&#x27;Цвет вставки внутри&#x27;,values:[&#x27;нет&#x27;]},
+{id:&#x27;opening&#x27;,name:&#x27;Сторона открывания&#x27;,values:[&#x27;L&#x27;,&#x27;R&#x27;]},
+{id:&#x27;nonstandard&#x27;,name:&#x27;Возможность изготовления нестандарта&#x27;,values:[&#x27;Нет&#x27;]},
+{id:&#x27;night&#x27;,name:&#x27;Ночной страж&#x27;,values:[&#x27;есть&#x27;]}
+];
+let selected={molding:&#x27;нет&#x27;,leaves:&#x27;одностворчатая&#x27;,width:&#x27;860&#x27;};
+let active={id:&#x27;width&#x27;,place:&#x27;main&#x27;,pending:&#x27;860&#x27;,query:&#x27;&#x27;};
+const files={};
+app.innerHTML=&#x27;&lt;aside class=&quot;side&quot;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img alt=&quot;Юркас&quot; width=&quot;36&quot; src=&quot;data:image/png;base64,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&quot;&gt;&lt;/div&gt;&#x27;+[[&#x27;lock&#x27;,&#x27;Доступы&#x27;],[&#x27;folder&#x27;,&#x27;Каталоги&#x27;],[&#x27;dollar-sign&#x27;,&#x27;Экономика&#x27;],[&#x27;layout-grid&#x27;,&#x27;Конфигуратор&#x27;],[&#x27;folders&#x27;,&#x27;Классификаторы&#x27;]].map(([i,s])=&gt;&#x27;&lt;div class=&quot;navitem&quot;&gt;&#x27;+icon(i)+s+&#x27;&lt;/div&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;div class=&quot;navitem navgroup&quot;&gt;&#x27;+icon(&#x27;chart-no-axes-combined&#x27;)+&#x27;Сборщик графики&lt;/div&gt;&lt;div class=&quot;navitem sub&quot;&gt;По слоям&lt;/div&gt;&lt;div class=&quot;navitem sub current&quot;&gt;Готовые модели&lt;/div&gt;&lt;div class=&quot;navitem sub&quot;&gt;Массовая загрузка изображений&lt;/div&gt;&lt;div class=&quot;navitem sub&quot;&gt;Настройки&lt;/div&gt;&lt;div class=&quot;navitem&quot;&gt;&#x27;+icon(&#x27;truck&#x27;)+&#x27;Управление услугами&lt;/div&gt;&lt;div class=&quot;navitem&quot;&gt;&#x27;+icon(&#x27;chart-column&#x27;)+&#x27;Отчёты&lt;/div&gt;&lt;div class=&quot;navitem&quot;&gt;&#x27;+icon(&#x27;history&#x27;)+&#x27;История&lt;/div&gt;&lt;/aside&gt;&lt;div class=&quot;right&quot;&gt;&lt;header class=&quot;topbar&quot;&gt;&lt;span class=&quot;country&quot;&gt;Республика Беларусь&lt;/span&gt;&#x27;+icon(&#x27;bell&#x27;)+icon(&#x27;log-out&#x27;)+&#x27;&lt;/header&gt;&lt;main&gt;&lt;h1&gt;Настройка сочетаний пререндеренных дверей&lt;/h1&gt;&lt;section class=&quot;panel&quot;&gt;&lt;div class=&quot;modelgrid&quot;&gt;&#x27;+[[&#x27;Номенклатурная группа&#x27;,&#x27;Дверь входная&#x27;],[&#x27;Поставщик&#x27;,&#x27;МеталЮр&#x27;],[&#x27;Серия&#x27;,&#x27;МеталЮр 3К&#x27;],[&#x27;Модель&#x27;,&#x27;М1&#x27;]].map(([l,v])=&gt;&#x27;&lt;div&gt;&lt;span class=&quot;fieldlabel&quot;&gt;&#x27;+l+&#x27;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;div class=&quot;field&quot;&gt;&#x27;+v+chevron+&#x27;&lt;/div&gt;&lt;/div&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button class=&quot;action yellow model-apply&quot;&gt;Применить&lt;/button&gt;&lt;button class=&quot;action plain model-reset&quot;&gt;Сбросить&lt;/button&gt;&lt;/div&gt;&lt;/section&gt;&lt;div class=&quot;workspace&quot;&gt;&lt;/div&gt;&lt;div class=&quot;flash&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&#x27;;
+
+const main=app.querySelector(&#x27;main&#x27;),model=main.querySelector(&#x27;.panel&#x27;),work=app.querySelector(&#x27;.workspace&#x27;);
+model.remove();
+work.innerHTML=&#x27;&lt;div class=&quot;desktop-columns&quot;&gt;&lt;div class=&quot;main-column&quot;&gt;&lt;/div&gt;&lt;aside class=&quot;side-panel&quot;&gt;&lt;/aside&gt;&lt;/div&gt;&#x27;;
+work.querySelector(&#x27;.main-column&#x27;).appendChild(model);
+const propertiesPanel=document.createElement(&#x27;section&#x27;);propertiesPanel.className=&#x27;panel&#x27;;work.querySelector(&#x27;.main-column&#x27;).appendChild(propertiesPanel);
+const side=work.querySelector(&#x27;.side-panel&#x27;);
+function icons(){if(globalThis.lucide)lucide.createIcons();}
+function message(s){app.querySelector(&#x27;.flash&#x27;).textContent=s;}
+function valueCell(p,place){const opened=active?.id===p.id&amp;&amp;active.place===place;return &#x27;&lt;div class=&quot;value-cell &#x27;+(opened?&#x27;open&#x27;:&#x27;&#x27;)+&#x27;&quot; data-id=&quot;&#x27;+p.id+&#x27;&quot; data-place=&quot;&#x27;+place+&#x27;&quot;&gt;&lt;button class=&quot;field value-toggle&quot; aria-label=&quot;&#x27;+p.name+&#x27;: &#x27;+esc(selected[p.id]||&#x27;выбрать значение&#x27;)+&#x27;&quot; aria-expanded=&quot;&#x27;+opened+&#x27;&quot;&gt;&lt;span class=&quot;&#x27;+(selected[p.id]?&#x27;&#x27;:&#x27;placeholder&#x27;)+&#x27;&quot;&gt;&#x27;+esc(selected[p.id]||&#x27;Выберите значение&#x27;)+&#x27;&lt;/span&gt;&#x27;+chevron+&#x27;&lt;/button&gt;&#x27;+(opened?&#x27;&lt;div class=&quot;value-popover&quot;&gt;&lt;div class=&quot;searchbox&quot;&gt;&#x27;+icon(&#x27;search&#x27;)+&#x27;&lt;input class=&quot;value-search&quot; aria-label=&quot;Поиск значений: &#x27;+p.name+&#x27;&quot; placeholder=&quot;Поиск значений&quot; value=&quot;&#x27;+esc(active.query)+&#x27;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;value-options&quot;&gt;&lt;/div&gt;&lt;div class=&quot;menubottom&quot;&gt;&lt;button class=&quot;action plain cancel-value&quot;&gt;Отмена&lt;/button&gt;&lt;button class=&quot;action yellow apply-value&quot;&gt;Применить&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&#x27;:&#x27;&#x27;)+&#x27;&lt;/div&gt;&#x27;;}
+function upload(type,label){const f=files[type];return &#x27;&lt;section class=&quot;uploadblock&quot;&gt;&lt;h3&gt;&#x27;+label+&#x27;&lt;/h3&gt;&lt;div class=&quot;upload&quot;&gt;&#x27;+(f?&#x27;&lt;img class=&quot;preview-image&quot; alt=&quot;Предпросмотр выбранного изображения&quot; src=&quot;&#x27;+f.url+&#x27;&quot;&gt;&#x27;:icon(&#x27;image-up&#x27;))+&#x27;&lt;p&gt;&#x27;+esc(f?.name||&#x27;Изображение не выбрано&#x27;)+&#x27;&lt;/p&gt;&lt;input type=&quot;file&quot; data-file=&quot;&#x27;+type+&#x27;&quot; aria-label=&quot;Загрузить &#x27;+label.toLowerCase()+&#x27;&quot; accept=&quot;image/png,image/jpeg&quot;&gt;&lt;p class=&quot;muted&quot;&gt;PNG, JPG · менее 20 МБ&lt;/p&gt;&lt;/div&gt;&lt;button class=&quot;action yellow widebutton save&quot; &#x27;+(!f||!Object.keys(selected).length?&#x27;disabled&#x27;:&#x27;&#x27;)+&#x27;&gt;Сохранить соответствие&lt;/button&gt;&lt;/section&gt;&#x27;;}
+function draw(){
+const sorted=[...props].sort((a,b)=&gt;Number(b.id in selected)-Number(a.id in selected));
+propertiesPanel.innerHTML=&#x27;&lt;div class=&quot;heading&quot;&gt;&lt;h2&gt;Свойства&lt;/h2&gt;&lt;span class=&quot;count&quot;&gt;Выбрано значений: &#x27;+Object.keys(selected).length+&#x27;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;property-header&quot;&gt;&lt;span&gt;Свойство&lt;/span&gt;&lt;span&gt;Значение&lt;/span&gt;&lt;/div&gt;&#x27;+sorted.map(p=&gt;&#x27;&lt;div class=&quot;property-row&quot;&gt;&lt;span class=&quot;property-name&quot;&gt;&#x27;+p.name+&#x27;&lt;/span&gt;&#x27;+valueCell(p,&#x27;main&#x27;)+&#x27;&lt;/div&gt;&#x27;).join(&#x27;&#x27;);
+side.innerHTML=&#x27;&lt;section class=&quot;panel&quot;&gt;&lt;div class=&quot;heading&quot;&gt;&lt;h2&gt;Выбранные значения&lt;/h2&gt;&lt;span class=&quot;count&quot;&gt;&#x27;+Object.keys(selected).length+&#x27;&lt;/span&gt;&lt;/div&gt;&#x27;+(Object.entries(selected).map(([id,value])=&gt;{const p=props.find(x=&gt;x.id===id);return &#x27;&lt;div class=&quot;summary-entry&quot;&gt;&lt;span class=&quot;fieldlabel&quot;&gt;&#x27;+p.name+&#x27;&lt;/span&gt;&lt;div class=&quot;summary-choice&quot;&gt;&#x27;+valueCell(p,&#x27;side&#x27;)+&#x27;&lt;button class=&quot;remove&quot; data-remove=&quot;&#x27;+id+&#x27;&quot; aria-label=&quot;Убрать &#x27;+p.name+&#x27;&quot;&gt;×&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&#x27;;}).join(&#x27;&#x27;)||&#x27;&lt;div class=&quot;summary-empty&quot;&gt;Выберите значения в строках свойств&lt;/div&gt;&#x27;)+&#x27;&lt;/section&gt;&lt;section class=&quot;panel&quot;&gt;&#x27;+upload(&#x27;photo&#x27;,&#x27;Фото&#x27;)+upload(&#x27;cover&#x27;,&#x27;Обложка&#x27;)+&#x27;&lt;/section&gt;&#x27;;
+bind();drawOptions();icons();
+}
+function drawOptions(){if(!active)return;const pop=work.querySelector(&#x27;.value-popover&#x27;);if(!pop)return;const p=props.find(x=&gt;x.id===active.id);const items=p.values.filter(v=&gt;v.toLocaleLowerCase(&#x27;ru&#x27;).includes(active.query.toLocaleLowerCase(&#x27;ru&#x27;))).sort((a,b)=&gt;Number(b===active.pending)-Number(a===active.pending));
+pop.querySelector(&#x27;.value-options&#x27;).innerHTML=items.map((v,i)=&gt;&#x27;&lt;div&gt;&#x27;+(i===0&amp;&amp;v===active.pending?&#x27;&lt;div class=&quot;sectionlabel&quot;&gt;Выбранное значение&lt;/div&gt;&#x27;:(i===0||items[i-1]===active.pending?&#x27;&lt;div class=&quot;sectionlabel&quot;&gt;Другие значения&lt;/div&gt;&#x27;:&#x27;&#x27;))+&#x27;&lt;label class=&quot;option &#x27;+(v===active.pending?&#x27;selected&#x27;:&#x27;&#x27;)+&#x27;&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&#x27;+esc(v)+&#x27;&quot; &#x27;+(v===active.pending?&#x27;checked&#x27;:&#x27;&#x27;)+&#x27;&gt;&lt;span&gt;&#x27;+esc(v)+&#x27;&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;&#x27;).join(&#x27;&#x27;)||&#x27;&lt;div class=&quot;option muted&quot;&gt;Ничего не найдено&lt;/div&gt;&#x27;;
+pop.querySelectorAll(&#x27;input[type=checkbox]&#x27;).forEach(box=&gt;box.onchange=()=&gt;{active.pending=box.checked?box.value:&#x27;&#x27;;drawOptions();});
+}
+function bind(){
+work.querySelectorAll(&#x27;.value-toggle&#x27;).forEach(b=&gt;b.onclick=()=&gt;{const cell=b.closest(&#x27;.value-cell&#x27;);active=active?.id===cell.dataset.id&amp;&amp;active.place===cell.dataset.place?null:{id:cell.dataset.id,place:cell.dataset.place,pending:selected[cell.dataset.id]||&#x27;&#x27;,query:&#x27;&#x27;};draw();});
+const pop=work.querySelector(&#x27;.value-popover&#x27;);if(pop){pop.querySelector(&#x27;.value-search&#x27;).oninput=e=&gt;{active.query=e.target.value;drawOptions();};pop.querySelector(&#x27;.cancel-value&#x27;).onclick=()=&gt;{active=null;draw();};pop.querySelector(&#x27;.apply-value&#x27;).onclick=()=&gt;{if(active.pending)selected[active.id]=active.pending;else delete selected[active.id];active=null;draw();message(&#x27;Значение применено. Выбор в строке свойства и правой панели синхронизирован.&#x27;);};pop.onkeydown=e=&gt;{if(e.key===&#x27;Escape&#x27;){active=null;draw();}};}
+work.querySelectorAll(&#x27;[data-remove]&#x27;).forEach(b=&gt;b.onclick=()=&gt;{delete selected[b.dataset.remove];active=null;draw();});
+work.querySelectorAll(&#x27;[data-file]&#x27;).forEach(input=&gt;input.onchange=()=&gt;{const f=input.files[0];if(!f)return;if(![&#x27;image/png&#x27;,&#x27;image/jpeg&#x27;].includes(f.type)||!f.size||f.size&gt;=20971520){message(&#x27;Выберите PNG или JPG размером менее 20 МБ.&#x27;);return;}const type=input.dataset.file;if(files[type])URL.revokeObjectURL(files[type].url);files[type]={name:f.name,url:URL.createObjectURL(f)};active=null;draw();message(&#x27;Изображение выбрано для предпросмотра.&#x27;);});
+work.querySelectorAll(&#x27;.save&#x27;).forEach(b=&gt;b.onclick=()=&gt;message(&#x27;Демонстрация: сохранение в приложение не выполняется.&#x27;));
+}
+app.querySelector(&#x27;.model-apply&#x27;).onclick=()=&gt;message(&#x27;Показаны свойства модели «М1», МеталЮр 3К.&#x27;);
+app.querySelector(&#x27;.model-reset&#x27;).onclick=()=&gt;{selected={};active=null;draw();};
+draw();
+})();
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      let mousePointerId = null;
+      let summaryPointerHandled = false;
+      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+        summaryPointerHandled =
+          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+        if (!summaryPointerHandled) {
+          return;
+        }
+        event.preventDefault();
+        summary.focus({ preventScroll: true });
+        picker.open = !picker.open;
+        mousePointerId = picker.open ? event.pointerId : null;
+      });
+      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
+        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+          event.preventDefault();
+        }
+      });
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+          if (
+            picker.open &amp;&amp;
+            event.pointerType === &quot;mouse&quot; &amp;&amp;
+            event.button === 0 &amp;&amp;
+            event.pointerId === mousePointerId
+          ) {
+            choice.click();
+          }
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        mousePointerId = null;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          mousePointerId = null;
+          summary.focus();
+          return;
+        }
+        if (event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const index = choices.indexOf(document.activeElement);
+        let nextIndex;
+        if (event.key === &quot;ArrowDown&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === &quot;ArrowUp&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+          nextIndex = 0;
+        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+          nextIndex = choices.length - 1;
+        } else {
+          return;
+        }
+        event.preventDefault();
+        picker.open = true;
+        choices[nextIndex].focus();
+      });
+      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+        if (!picker.contains(event.relatedTarget)) {
+          picker.open = false;
+          mousePointerId = null;
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!summary.contains(event.target)) {
+          mousePointerId = null;
+        }
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const endPointerSelection = () =&gt; {
+        mousePointerId = null;
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
+      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
+      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
+          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
+          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>
